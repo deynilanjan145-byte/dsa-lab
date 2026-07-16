@@ -1,0 +1,5 @@
+{
+    "editor.suggest.matchOnWordStartOnly": false,
+    "js/ts.tsserver.automaticTypeAcquisition.enabled": false,
+    "js/ts.tsserver.web.typeAcquisition.enabled": false
+}

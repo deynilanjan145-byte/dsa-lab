@@ -18,11 +18,14 @@ Node *insert(Node *root,int value){
   }
   else{
     if(value<root->val){
-       insert(root->left,value);
+       
+       root->left=insert(root->left,value);
+ 
      }
     else{
-       insert(root->right,value);
-   }
+     
+       root->right=insert(root->right,value);
+}
 }
  return root;
 }
@@ -35,7 +38,7 @@ int main(){
    Node *root=NULL;
    for(int i=0;i<size;i++){
      scanf("%d",&p[i]);
-     insert(root,p[i]);
+     root=insert(root,p[i]);
    }
    free(p);
    return 0;
