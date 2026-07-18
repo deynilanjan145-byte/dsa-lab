@@ -30,16 +30,15 @@ Node *insert(Node *root,int value){
  return root;
 }
 int main(){
-   int size;
-   printf("Enter the number of elements:");
-   scanf("%d",&size);
+   int size=5;
+   
    int *p=(int *)malloc(size*sizeof(int));
+   p={5,2,1,3,4};
    printf("Enter elements:");
    Node *root=NULL;
-   for(int i=0;i<size;i++){
-     scanf("%d",&p[i]);
+   for(int i=0;i<size;i++){    
      root=insert(root,p[i]);
-   }
+  }
    free(p);
    return 0;
 }    
